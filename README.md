@@ -1,10 +1,13 @@
 # 🐍 FastAPI User API
+Este é o meu primeiro projeto utilizando FastAPI! 
 
-Uma API RESTful para gerenciamento de usuários, construída com FastAPI, SQLAlchemy e SQLite, com testes automatizados usando pytest.
+Construi uma API RESTful simples para gerenciamento de usuários, com CRUD completo, validação de dados e testes. O objetivo deste projeto é praticar, além de criar um portfólio funcional que demonstre boas práticas de desenvolvimento de APIs modernas em Python.
+
+Se trata de um sistema para gerenciamento de usuários, construída com FastAPI, SQLAlchemy e SQLite, com testes automatizados usando pytest.
 
 Esta API permite criar, ler, atualizar e deletar usuários, seguindo boas práticas de arquitetura em camadas e separação de responsabilidades.
 
-## ⚡ Funcionalidades
+## Funcionalidades
 
 * Criar usuários (POST /users)
 
@@ -20,19 +23,21 @@ Esta API permite criar, ler, atualizar e deletar usuários, seguindo boas práti
 
 * Documentação automática da API (/docs e /redoc)
 
-## 🏗 Arquitetura
+## Arquitetura
 
 O projeto segue arquitetura em camadas:
 
-| Camada    |  Arquivo(s)  |  Responsabilidade
-|API / Rotas| main.py	   |Recebe requisições e retorna respostas
-|Validação	| schemas.py   |Valida entrada/saída de dados
-|Banco	    |models.py	   |Define tabelas do banco de dados
-|Lógica CRUD|	crud.py	   |Lida com criação, leitura, atualização e deleção de dados
-|Conexão DB	|database.py   |Cria e gerencia a conexão com o banco
-|Testes     |	tests/	   |Testes unitários e integração usando pytest
+| Camada    |  Arquivo(s)  |  Responsabilidade |
+|-----------|--------------|------------------|
+| API / Rotas | main.py     | Recebe requisições e retorna respostas |
+| Validação  | schemas.py  | Valida entrada/saída de dados |
+| Banco      | models.py   | Define tabelas do banco de dados |
+| Lógica CRUD| crud.py     | Lida com criação, leitura, atualização e deleção de dados |
+| Conexão DB | database.py | Cria e gerencia a conexão com o banco |
+| Testes     | tests/      | Testes unitários e integração usando pytest |
 
-## 🛠 Tecnologias usadas
+
+## Tecnologias usadas
 
 * Python 3.11+
 * FastAPI
@@ -42,7 +47,7 @@ O projeto segue arquitetura em camadas:
 * pytest
 * Uvicorn
 
-## ⚙️ Instalação
+## Instalação
 
 Clone o repositório:
 ```bash
@@ -67,7 +72,7 @@ Instale as dependências:
 pip install -r requirements.txt
 ```
 
-🚀 Executando a API
+## Executando a API
 
 Inicie o servidor:
 ```bash
@@ -121,7 +126,7 @@ Deletar usuário
 DELETE /users/1
 ```
 
-## 📂 Estrutura do projeto
+## Estrutura do projeto
 ```bash
 
 app/
@@ -138,7 +143,7 @@ requirements.txt
 README.md
 ```
 
-## 💡 Observações
+## Observações
 
 - O projeto utiliza SQLAlchemy com SQLite, mas pode ser facilmente adaptado para PostgreSQL ou outro banco.
 
